@@ -1,0 +1,25 @@
+ModuleId = "CC-DB-CB-84-E7-74-E7-D3-F9-2A-24-44-30-86-67-6E-C2-BD-08-D7"
+hitPointId = 29
+context = Null
+exception = System.NullReferenceException: Object reference not set to an instance of an object.
+   at System.Collections.Generic.Dictionary`2.FindEntry(TKey key)
+   at System.Collections.Generic.Dictionary`2.ContainsKey(TKey key)
+   at AltCover.Recorder.Counter.EnsureModule(Dictionary`2 counts, String moduleId)
+   at AltCover.Recorder.Counter.AddSingleVisit(Dictionary`2 counts, String moduleId, Int32 hitPointId, Track context)
+   at AltCover.Recorder.Instance.AddVisit(String moduleId, Int32 hitPointId, Track context)
+   at AltCover.Recorder.Instance.LogException[a,b,c,d](a moduleId, b hitPointId, c context, d x)
+   at AltCover.Recorder.Instance.AddVisit(String moduleId, Int32 hitPointId, Track context)
+   at AltCover.Recorder.Instance.VisitImpl@262.Invoke(String moduleId, Int32 hitPointId, Track context)
+   at AltCover.Recorder.Instance.VisitImpl(String moduleId, Int32 hitPointId, Track context)
+   at Katas.Tennis.scoreGame(IEnumerable`1 points)
+   at Tests.tennisTests@41.Invoke(Unit _arg1)
+   at Expecto.Impl.execTestAsync@692-1.Invoke(Unit unitVar)
+   at Microsoft.FSharp.Control.AsyncBuilderImpl.callA@522.Invoke(AsyncParams`1 args)
+   at <StartupCode$FSharp-Core>.$Control.loop@124-50(Trampoline this, FSharpFunc`2 action)
+   at Microsoft.FSharp.Control.Trampoline.ExecuteAction(FSharpFunc`2 firstAction)
+   at Microsoft.FSharp.Control.TrampolineHolder.Protect(FSharpFunc`2 firstAction)
+   at <StartupCode$FSharp-Core>.$Control.-ctor@200-1.Invoke(Object o)
+   at System.Threading.QueueUserWorkItemCallbackDefaultContext.Execute()
+   at System.Threading.ThreadPoolWorkQueue.Dispatch()
+   at System.Threading._ThreadPoolWaitCallback.PerformWaitCallback()
+
